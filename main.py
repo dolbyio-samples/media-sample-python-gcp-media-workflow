@@ -37,6 +37,7 @@ def hello_gcs(event, context):
     # Set filename
     global fileName
     fileName = {file['name']}
+    # TODO: Add in conditional logic to not transcode newly transcoded files here
     print(f"Processing file: {fileName}.")
     # Make Dolby.io API call
     try:
