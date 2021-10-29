@@ -1,6 +1,6 @@
-# Google Cloud Storage Auto Transcode with Dolby.io
-
 ! Read the [associated blog post](https://dolby.io/blog/automating-dolby-io-media-workflows-with-google-cloud-functions/) for more context of this project !
+
+# Google Cloud Storage Auto Transcode with Dolby.io
 
 A sample application for [Google Cloud Functions](https://cloud.google.com/functions) to use Dolby.io's [Media APIs](https://docs.dolby.io/media-apis/docs) to automatically transcode any new files uploaded to a [Cloud Storage](https://cloud.google.com/storage) Bucket.
 
