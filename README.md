@@ -1,6 +1,8 @@
 # Google Cloud Storage Auto Transcode with Dolby.io
 
-A sample application for [Google Cloud Functions](https://cloud.google.com/functions) to use Dolby.io's [Transcode API](https://docs.dolby.io/media-apis/docs/transcoding-media) to automatically transcode any new files uploaded to a [Cloud Storage](https://cloud.google.com/storage) Bucket.
+! Read the [associated blog post](https://dolby.io/blog/automating-dolby-io-media-workflows-with-google-cloud-functions/) for more context of this project !
+
+A sample application for [Google Cloud Functions](https://cloud.google.com/functions) to use Dolby.io's [Media APIs](https://docs.dolby.io/media-apis/docs) to automatically transcode any new files uploaded to a [Cloud Storage](https://cloud.google.com/storage) Bucket.
 
 ## Setup
 
@@ -28,6 +30,6 @@ The code used for the Google Cloud Function lives in the `cloud-function` folder
 
 ## Additional Notes
 
-Upon execution, the function will log a job id that will contain the status. To see the Job's status, use [this endpoint](https://docs.dolby.io/media-apis/reference/media-transcode-get).
+Upon execution, the function will log a job id that will contain the status. To see the job's status, use [the get status endpoint](https://docs.dolby.io/media-apis/reference/media-enhance-get).
 
 Logic to ensure no post-processed files are ran through the pipeline is necessary to prevent infinite loops. Depending on your workflow, modify the logic to exit on a processed file, whether that be by file extension, name or other methods.
